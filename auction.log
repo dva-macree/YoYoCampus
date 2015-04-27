@@ -1,0 +1,2 @@
+>>>>>>>LOG4J<<<<<<< 0 2015-04-26 16:38:14,930 ERROR [org.hibernate.property.BasicPropertyAccessor] - IllegalArgumentException in class: com.yoyo.domain.MainUser, getter method of property: uid
+>>>>>>>LOG4J<<<<<<< 0 2015-04-26 16:49:17,494 ERROR [org.hibernate.property.BasicPropertyAccessor] - IllegalArgumentException in class: com.yoyo.domain.MainUser, getter method of property: uid

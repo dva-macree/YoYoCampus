@@ -1,0 +1,445 @@
+/*
+*{
+    font-size: 62.5%;
+}
+*/
+/*下拉框*/
+.option{
+    position: absolute;
+    right: 0px;
+    top:50px;
+    width: 140px;
+    height: 126px;
+    background: white;
+    z-index: 10;
+    border: #D4D4D4 1px solid;
+}
+.option li{
+    list-style: none;
+    padding: 7px 12px ;
+/*    margin: 0px 10px;*/
+    display: block;
+    font-size: 14px;
+    height: 42px;
+    line-height: 25px;
+}
+
+.option li:hover{
+    background-color: #D4D4D4 ;
+}
+
+.option .navMenuListBody{
+    border-top: #D4D4D4 1px solid;
+    border-bottom: #D4D4D4 1px solid;
+}
+
+.option small{
+    display: inline-block;
+    text-indent: 12px;   
+    font-size: 14px;
+    line-height: 14px;
+}
+.option ul{
+    padding: 0 0;   
+}
+.option img{
+    width: 13px;
+}
+
+/*样式初始化*/
+body{
+    margin: 0;
+    background-color: #DDD;
+    font-family:"微软雅黑";
+
+}
+
+
+.panel{
+    border-radius: 0;   
+}
+
+
+.panel-default > .panel-heading{
+    background-color: white;
+}
+
+
+
+
+.page{
+    max-width: 480px;
+    background: #F0F0F0;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    min-height: 578px;
+}
+
+/*页头广告*/
+.appAdvertise{
+    padding: 15px 10px;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.appAdvertise .logo{
+    float: left;
+}
+
+.appAdvertise .download{
+    float: right;
+}
+
+/*导航栏*/
+
+.navbar{
+    height: 48px;   
+    padding: 0px 0px;
+    background-color: #05C1AD;
+    border-radius: 0px;
+}
+
+.navbar a{
+ text-decoration: none;
+}
+
+.navArrow{
+    float: left;
+    line-height: 47px;
+    height: 47px;
+    padding: 0 16px;
+    margin-right: auto; 
+    color: #FFF;
+    font-size: 14px;
+    
+}
+
+.navArrow:before{
+    content: '\20';
+     background: url(images/left_arrow.gif) no-repeat 0 50%;
+    background-size: 20px;
+    width: 10px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .3em;
+    margin-left: .3em;
+}
+
+.navArrow:hover{
+    background-color: #6DD6CB;   
+    color: white;
+}
+.navArrow:hover:before{
+    content: '\20';
+    background: url(images/left_arrow_hover.gif) no-repeat 0 50% #6DD6CB;
+ 
+    display:inline-block;
+}
+
+.navMenu{
+    display: inline-block;
+    float:right;
+    background: url(images/navbar_menu.gif) no-repeat 0 50% #05C1AD;
+    width: 40px;
+    height: 100%;
+    background-size:40px;
+/*
+    width: 99px;
+    height: 100%;
+*/
+}
+.navMenu:hover{
+    background: url(images/navbar_menu_hover.gif) no-repeat 0 50%  #6DD6cb; 
+    width: 40px;
+    height: 100%;
+    background-size:40px;
+}
+
+.navMenuList{
+    position: relative;
+    padding-left: 0px;
+}
+
+.navMenuList ul{
+    padding: 0 0;
+}
+/*首页页面内容*/
+.schoolName{
+    font-size: 18px;   
+}
+
+.schoolDistance{
+    font-size: 14px;
+    color: #d5d5d5;
+}
+
+.schoolList .oldPrice{
+    margin-left: 19px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.schoolList .discount{
+/*    margin:0px 5px;*/
+    font-size: 12px;
+    padding: 0 7px;;
+    border-left: #D5d5d5 1px solid;
+    border-right: #D5d5d5 1px solid;
+    color: #959595;
+}
+
+.schoolList .studentNum{
+    font-size: 12px;
+    padding: 0 7px;
+    color: #959595;
+}
+/*详情页面正文内容*/
+.container{
+    width: 100%;   
+    padding: 0 0;
+}
+
+.carousel-indicators .active{
+    background-color:#12897d;
+}
+
+#schoolName{
+    font-size: 18px;
+    line-height: 18px;
+    color: #303030;
+}
+
+#collect{
+    height: 14px;   
+    line-height: 18px;
+}
+
+#collect img{
+    margin: -2px 0 0 0 ;
+    height: 14px;
+    margin-right: 5px;
+}
+
+#share{
+    height: 14px; 
+    line-height: 18px;
+}
+#share img{
+    margin: -1px 0 0 0;
+    height: 14px;   
+    margin-right: 5px;
+}
+
+.discountPrice{
+    margin-top:6px;
+    font-size: 20px;
+    color: #12897D;
+/*    font-weight: bold;*/
+}
+
+.oldPrice{
+    text-decoration: line-through;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 12px;
+    color: #959595;
+}
+
+#student{
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+#student img{
+    height:   14px; 
+    margin: -5px 2px 0 0;
+}
+#student strong{
+    color:#12897D;
+}
+#service{
+    margin-top: 10px;
+    border-top: #F4F4F4 1px solid;
+    padding:13px 0 0 0;
+}
+
+/*服务标签*/
+#bus_service,#order_service,#campus_contactor{
+    font-size: 10px;   
+}
+
+#bus_service img, #order_service img ,#campus_contactor img{
+    height: 14px;   
+}
+
+/*特色服务*/
+#feature ul{
+    display: block;
+    padding:  0 0 ;
+}
+#feature li{
+    margin:  0 0;
+    padding: 3px;
+    display: block;
+    background: url(images/li.png) no-repeat 0 50%;
+    background-size: 10px;
+    text-indent: 16px;
+}
+
+/*价格区间*/
+.classGroup{
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0px;
+}
+
+.classGroup .oldPrice{
+    margin: 0;
+}
+.classGroup .discountPrice{
+    margin: 0;   
+    font-size: 16px;
+}
+.classGroup .foldArrow{
+    width:16px;   
+    display: inline-block;
+    margin-left: 20px
+}
+.well{
+    margin-bottom: 0px;   
+}
+.well p{
+    text-indent: 22px;   
+}
+
+.commentList{
+    padding:0px 0px;    
+}
+
+.commentList button{
+    margin-bottom: 14px;   
+    color:#959595;
+    border: #959595 1px solid;
+}
+
+.list-item-container{
+    padding: 10px 15px   
+}
+.navtab{
+    padding-left: 0;  
+    display: block;
+}
+.navtab li{
+    display: inline-block;   
+    text-align: center;
+    font-size: 11px;
+/*    border:black 1px solid;*/
+}
+.navtab .selected{
+/*    background-color: #12897d;*/
+    background-color: #05C0AD;
+    color: white;
+}
+
+.navtab a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 7px 0;
+    color: inherit;
+}
+
+.navbar b{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.tab-head{
+    border-right: #D4D4D4 1px solid;
+    border-bottom: #D4D4D4 1px solid;
+}
+.tab-body{
+/*       border-left: #D4D4D4 1px solid;*/
+       border-right: #D4D4D4 1px solid;
+    border-bottom: #D4D4D4 1px solid;
+}
+
+.tab-tail{
+/*       border-left: #D4D4D4 1px solid;   */
+    border-bottom: #D4D4D4 1px solid;
+}
+
+/*顶部导航栏*/
+.orderNav{
+    background-color: #F5F5F5;   
+    width:100%;
+    height: 45px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.orderNav button{
+    background-color: #05C1AD;
+    color: white;
+    width: 100%;
+}
+.orderNav button:active, .orderNav button:hover{
+    background-color: #12897D;
+    color: white;
+}
+
+/*评论标签*/
+
+.goodTags{
+    font-size: 10px;
+    border: #e4a100 1px solid;   
+    color:#e4a100;
+    padding:2px;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    line-height: 16px;
+    padding: 1px 4px;
+    margin-top: 7px;
+}
+
+.badTags{
+    font-size: 10px;
+    border: #959595 1px solid;   
+    color:#959595;
+    padding:2px;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    line-height: 16px;
+    padding: 1px 4px;
+    margin-top: 7px;
+}
+
+.goodTags small, .badTags small{
+    margin-left: 5px;   
+}
+
+/*返回顶部的按钮*/
+.backToTop{
+    position: fixed;
+    display: block;
+    right: 10px;
+    background: url(images/backTop.png);
+    background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+    
+    z-index:10000;
+}
+
+.backToTop:hover{
+    background-image: url(images/backTop_hover.png);
+    background-size: 100% 100%;
+    width: 48px;
+    height: 48px;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:dflt="seu_tao">
+	<xsd:import namespace="seu_tao" schemaLocation="seu_tao.xsd" />
+	<xsd:element name="dataset">
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="unbounded">
+				<xsd:element name="tao_university" type="dflt:tao_university__type" />
+				<xsd:element name="tao_hooby" type="dflt:tao_hooby__type" />
+				<xsd:element name="dbmaintain_scripts" type="dflt:dbmaintain_scripts__type" />
+				<xsd:element name="t_user" type="dflt:t_user__type" />
+				<xsd:element name="t_login_log" type="dflt:t_login_log__type" />
+				<xsd:any namespace="seu_tao" />
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
